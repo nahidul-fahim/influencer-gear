@@ -1,0 +1,59 @@
+@media screen and (max-width: 576px) {
+
+    /* GLOBAL STYLE */
+
+    :root {
+        --maintitle: 2rem;
+        --secondtitle: 1.5rem;
+        --thirdtitle: 1.125rem;
+        --bodytext: .9rem;
+        --margintop: 5rem;
+    }
+    
+    /* HEADER SECTION RESPONSIVE */
+
+    body {
+        max-width: 100vmin;
+        margin: 0 auto;
+    }
+
+    header {
+        max-width: 100vmin;
+        margin: 0 auto;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+    
+    .nav-menu {
+        gap: 10px;
+    }
+    
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .hero-left {
+        order: 2;
+        width: 100vmin;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .hero-right {
+        order: 1;
+        width: 100vmin;
+    }
+
+    .hero-right img {
+        width: 70%;
+    }
+}
