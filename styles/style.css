@@ -2,12 +2,68 @@
 
 /* GLOBAL STYLE STARTS HERE */
 
+:root {
+    --primary: #3A3A3A;
+    --secondary: #E02C6D;
+    --accent: #0A0826;
+    --white: #fff;
+    --maintitle: 3.15rem;
+    --secondtitle: 2.35rem;
+    --thirdtitle: 1.5rem;
+    --bodytext: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
 }
+
+.main-title {
+    color: var(--primary);
+    font-size: var(--maintitle);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.second-title {
+    color: var(--accent);
+    font-size: var(--secondtitle);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.third-title {
+    color: var(--primary);
+    font-size: var(--thirdtitle);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.body-text {
+    color: var(--primary);
+    font-size: var(--bodytext);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn-primary {
+    font-size: var(--bodytext);
+    font-weight: 700;
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 2.5rem;
+}
+
+/* GLOBAL STYLE ENDS HERE */
+
