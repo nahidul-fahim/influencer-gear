@@ -11,17 +11,18 @@
     --secondtitle: 2.35rem;
     --thirdtitle: 1.5rem;
     --bodytext: 1rem;
-    --margintop: 6.8rem;
+    --margintop: 6rem;
+    --maxwidth: 1200px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0 auto;
 }
 
@@ -77,7 +78,7 @@ i {
  /* HEADER SECTION STARTS HERE */
 
 header {
-    max-width: 1200px;
+    max-width: var(--maxwidth);
     margin: 0 auto;
 }
 
@@ -124,7 +125,40 @@ header {
 
 /* COMPANY SECTION STARTS HERE */
 
+.companies {
+    margin: var(--margintop) auto 0 auto;
+    max-width: var(--maxwidth);
+    padding: 30px 0;
+    border-top: 1px solid rgba(211, 211, 211, 0.575);
+    border-bottom: 1px solid rgba(211, 211, 211, 0.575);
+    display: grid;
+    grid-template: auto / repeat(7, 1fr);
+    grid-template-areas: 
+    "c1 c2 c3 c4 c5 c6 c7";
+    justify-items: center;
+    align-items: center;
+}
 
-
+#company1 {
+    grid-area: c1;
+}
+#company2 {
+    grid-area: c2;
+}
+#company3 {
+    grid-area: c3;
+}
+#company4 {
+    grid-area: c4;
+}
+#company5 {
+    grid-area: c5;
+}
+#company6 {
+    grid-area: c6;
+}
+#company7 {
+    grid-area: c7;
+}
 
 /* COMPANY SECTION STARTS HERE */
