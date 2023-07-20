@@ -67,6 +67,78 @@
         width: 60%;
     }
 
-    /* */
+    /* COMPANY SECTION STARTS HERE */
+
+.popular-collection {
+    margin: var(--margintop) auto 0 auto;
+    max-width: 1120px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-archive {
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template: auto / repeat(12, 1fr);
+    grid-template-areas: 
+    "c1 c1 c1 c2 c2 c2 c3 c3 c3"
+    "c4 c4 c4 c5 c5 c5 c6 c6 c6"
+    "c7 c7 c7 c8 c8 c8 c9 c9 c9";
+    grid-gap: 30px;
+}
+
+#card1 {
+    grid-area: c1;
+}
+#card2 {
+    grid-area: c2;
+}
+#card3 {
+    grid-area: c3;
+}
+#card4 {
+    grid-area: c4;
+}
+#card5 {
+    grid-area: c5;
+}
+#card6 {
+    grid-area: c6;
+}
+#card7 {
+    grid-area: c7;
+}
+#card8 {
+    grid-area: c8;
+}
+#card9 {
+    grid-area: c9;
+}
+
+.rating * {
+    display: inline;
+}
+
+.product-card {
+    margin: 0 auto;
+    width: 340px;
+    height: auto;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 30px lightgray;
+    transition: all .5s;
+}
+
+.product-card:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 0 20px #e02c6e50;
+}
 
 }
